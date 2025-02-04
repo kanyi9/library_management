@@ -1,0 +1,56 @@
+2025-02-04 09:50:03,557 Worker rq:worker:b08bc010eb4b405298c2d8408c83a9ba started with PID 6458, version 1.16.2
+2025-02-04 09:50:03,558 Subscribing to channel rq:pubsub:b08bc010eb4b405298c2d8408c83a9ba
+2025-02-04 09:50:03,563 *** Listening on home-kanyi-app2:short, home-kanyi-app2:default, home-kanyi-app2:long...
+2025-02-04 09:50:03,565 Cleaning registries for queue: home-kanyi-app2:short
+2025-02-04 09:50:03,572 Cleaning registries for queue: home-kanyi-app2:default
+2025-02-04 09:50:03,584 Cleaning registries for queue: home-kanyi-app2:long
+2025-02-04 10:00:01,149 Worker b08bc010eb4b405298c2d8408c83a9ba [PID 6458]: warm shut down requested
+Traceback (most recent call last):
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/connection.py", line 357, in connect
+    sock = self.retry.call_with_retry(
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/connection.py", line 358, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/connection.py", line 730, in _connect
+    raise err
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/connection.py", line 718, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kanyi/app2/apps/frappe/frappe/utils/bench_helper.py", line 48, in invoke
+    return super().invoke(ctx)
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/click/core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/kanyi/app2/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/kanyi/app2/apps/frappe/frappe/utils/background_jobs.py", line 324, in start_worker
+    worker.work(
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/rq/worker.py", line 458, in work
+    self.teardown()
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/rq/worker.py", line 1048, in teardown
+    self.register_death()
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/rq/worker.py", line 834, in register_death
+    p.execute()
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/client.py", line 1524, in execute
+    conn = self.connection_pool.get_connection("MULTI", self.shard_hint)
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+
+Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2025-02-04 10:02:53,376 Worker rq:worker:8dbc296a3c0749e591a1bb856c15eda4 started with PID 10735, version 1.16.2
+2025-02-04 10:02:53,377 Subscribing to channel rq:pubsub:8dbc296a3c0749e591a1bb856c15eda4
+2025-02-04 10:02:53,380 *** Listening on home-kanyi-app2:short, home-kanyi-app2:default, home-kanyi-app2:long...
+2025-02-04 10:02:53,381 Cleaning registries for queue: home-kanyi-app2:short
+2025-02-04 10:02:53,383 Cleaning registries for queue: home-kanyi-app2:default
+2025-02-04 10:02:53,386 Cleaning registries for queue: home-kanyi-app2:long

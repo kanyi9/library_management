@@ -1,0 +1,20 @@
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/client.py", line 1192, in run
+    pubsub.get_message(ignore_subscribe_messages=True, timeout=sleep_time)
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/client.py", line 1054, in get_message
+    response = self.parse_response(block=(timeout is None), timeout=timeout)
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/client.py", line 865, in parse_response
+    response = self._execute(conn, try_read)
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/client.py", line 841, in _execute
+    return conn.retry.call_with_retry(
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/retry.py", line 65, in call_with_retry
+    fail(error)
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/client.py", line 843, in <lambda>
+    lambda error: self._disconnect_raise_connect(conn, error),
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/client.py", line 830, in _disconnect_raise_connect
+    raise error
+  File "/home/kanyi/app2/env/lib/python3.10/site-packages/redis/retry.py", line 62, in call_with_retry
+    
