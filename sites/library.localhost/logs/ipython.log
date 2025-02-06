@@ -1,0 +1,4 @@
+2025-02-04 12:11:35,487 INFO ipython === bench console session ===
+2025-02-04 12:11:35,488 INFO ipython import frappe
+2025-02-04 12:11:35,488 INFO ipython frappe.db.set_value('System Settings', None, 'enable_scheduler', 1)
+2025-02-04 12:11:35,488 INFO ipython === session end ===

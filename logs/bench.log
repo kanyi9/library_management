@@ -39,3 +39,36 @@
 2025-02-04 10:03:38,055 DEBUG cd /home/kanyi/app2 && supervisorctl restart frappe:
 2025-02-04 10:03:38,631 WARNING cd /home/kanyi/app2 && supervisorctl restart frappe: executed with exit code 7
 2025-02-04 10:03:38,631 WARNING /home/kanyi/.local/bin/bench restart executed with exit code 1
+2025-02-04 10:55:17,415 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 10:55:51,797 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 10:56:37,060 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 11:09:37,884 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 11:11:12,172 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 11:11:46,297 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 11:14:33,588 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 11:15:20,226 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 11:16:09,995 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 11:16:34,951 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 11:17:11,138 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 11:20:31,234 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 11:22:22,981 INFO /home/kanyi/.local/bin/bench new-site library.localhost
+2025-02-04 12:10:51,611 INFO /home/kanyi/.local/bin/bench --site library.localhost console
+2025-02-04 12:13:30,880 INFO /home/kanyi/.local/bin/bench retart
+2025-02-04 12:13:37,487 INFO /home/kanyi/.local/bin/bench restart
+2025-02-04 12:13:43,088 DEBUG cd /home/kanyi/app2 && sudo supervisorctl restart frappe:
+2025-02-04 12:13:43,360 WARNING cd /home/kanyi/app2 && sudo supervisorctl restart frappe: executed with exit code 2
+2025-02-04 12:13:43,361 WARNING /home/kanyi/.local/bin/bench restart executed with exit code 1
+2025-02-04 12:14:56,431 INFO /home/kanyi/.local/bin/bench setup supervisor
+2025-02-04 12:14:56,748 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2025-02-04 12:14:56,748 LOG Updated supervisord.conf: 'chown' changed from '' to 'kanyi:kanyi'
+2025-02-04 12:15:45,339 INFO /home/kanyi/.local/bin/bench restart
+2025-02-04 12:15:45,780 DEBUG cd /home/kanyi/app2 && sudo supervisorctl restart frappe:
+2025-02-04 12:15:46,018 WARNING cd /home/kanyi/app2 && sudo supervisorctl restart frappe: executed with exit code 2
+2025-02-04 12:15:46,019 WARNING /home/kanyi/.local/bin/bench restart executed with exit code 1
+2025-02-04 12:23:58,751 INFO /home/kanyi/.local/bin/bench restart
+2025-02-04 12:23:59,184 DEBUG cd /home/kanyi/app2 && sudo supervisorctl restart frappe:
+2025-02-04 12:23:59,418 WARNING cd /home/kanyi/app2 && sudo supervisorctl restart frappe: executed with exit code 1
+2025-02-04 12:23:59,419 WARNING /home/kanyi/.local/bin/bench restart executed with exit code 1
+2025-02-05 09:35:08,803 INFO /home/kanyi/.local/bin/bench --site library.localhost add-to-hosts
+2025-02-05 09:37:22,766 INFO /home/kanyi/.local/bin/bench --site library.localhost install-app library_management
+2025-02-05 09:38:19,208 INFO /home/kanyi/.local/bin/bench --site library.localhost list-apps
